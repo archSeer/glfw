@@ -12,3 +12,4 @@ glfw-src/examples/mthello
 glfw-src/tests/defaults
 glfw-src/tests/joysticks
 glfw-src/tests/version
+lib/*/*.so

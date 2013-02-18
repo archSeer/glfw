@@ -1,8 +1,8 @@
-# ruby-glfw
+# glfw
 
-## What is ruby-glfw?
+## What is glfw?
 
-ruby-glfw contains Ruby bindings for the [GLFW library].  This currently
+glfw contains Ruby bindings for the [GLFW library].  This currently
 includes the GLFW 2.7.3 source code in the package.  This particular fork is my
 attempt to fix some build issues in ruby-glfw, and is based on the old
 [ruby-glfw gem][deathtrap] (unmaintained since 2008-ish) by Jan Dvorak.
