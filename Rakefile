@@ -19,6 +19,7 @@
 
 require 'rubygems/package_task'
 require 'rdoc/task'
+require 'rake/testtask'
 require 'rake/extensiontask'
 
 # build documentation
@@ -57,6 +58,8 @@ Gem::PackageTask.new(spec) do |pkg|
 end
 
 Rake::ExtensionTask.new 'glfw', spec
+
+Rake::TestTask.new
 
 task :test => :compile
 
