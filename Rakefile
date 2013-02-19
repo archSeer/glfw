@@ -29,19 +29,8 @@ rd = RDoc::Task.new do |rdoc|
 end
 
 # Define the files that will go into the gem
-gem_files = FileList["{lib,ext,examples,glfw-src,website}/**/*","README.md"]
-gem_files = gem_files.exclude("**/*.so",
-                              "**/*.o{,bj}",
-                              "examples/**/*",
-                              "ext/glfw/*.log",
-                              "ext/glfw/Rakefile",
-                              "glfw-src/docs/**/*",
-                              "glfw-src/support/**/*",
-                              "**/*.app/**/*",
-                              "**/*.dSYM/**/*",
-                              "**/*.dSYM",
-                              "**/*.app",
-                              "**/*.dylib")
+gem_files = FileList["{lib,ext,examples,glfw-src}/**/*","README.md"]
+gem_files = gem_files.exclude("**/*.so", "**/*.o{,bj}")
 
 spec = Gem::Specification.new do |s|
   s.name              = "ruby-glfw"
